@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  ring-chimer:
+    build: .
+    ports:
+     - "8000:8000"
+    volumes:
+     - ./data:/data
+    restart: unless-stopped
+
